@@ -1,0 +1,149 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  } 
+  #navbar {
+    /* to adjust content in 1 direction */
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #be3144;
+    
+  }
+  .navlist {
+    display: flex;
+    margin-right: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28.8px;
+    font-weight: 400;
+    line-height: 1;
+    
+  }
+  
+  .navlist > li {
+
+    display: list-item;
+    list-style: none;
+  }
+  .navlist > li > a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: lavender;
+    font-size: 24px;
+    
+  }
+  a:hover {
+    background-color: darkslateblue;
+  }
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #000;
+    background-image: linear-gradient(40deg, #3a3d40 0%, #181719 100%);
+    height: 800px;
+  }
+  #welcome-section > h1{
+
+    font-family: 'Raleway', sans-serif;
+ font-weight: 700;
+ text-align: center;
+ font-size: 64px;
+ color: lavender;
+
+
+}
+#welcome-section > p {
+    font-size: 32px;
+    font-weight: 100;
+    font-style: italic;
+    color: #be3144;
+}
+#projects{
+    text-align: center;
+    background-color:#45567d ;
+    color: lavender;
+    padding: 10px;
+}
+.project-section{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 48px;
+    justify-content: center;
+    margin: 160px auto auto auto;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 30px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .project-grid > .project {
+    background-color: #303841;
+    border-radius: 20px;
+    text-decoration: none;
+    color: lavender;
+  }
+  .project-grid > .project > .project-image{
+      width: 100%;
+  }
+  .project-grid > .project > .project-title{
+      font-size: 30px;
+      font-family: 'Poppins', sans-serif;
+
+  }
+  #contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+ 
+       font-family: 'Poppins', sans-serif; 
+       color: lavender;
+       background-color: #303841;
+       padding-top: 20px; 
+    }
+    #contact > h2{
+        font-size: 50px;
+    }
+    #contact-links{
+
+    }
+    .links{
+        text-decoration: none;
+        color: lavender;
+        font-size: 30px;
+        padding: 16px;
+    }
+    /*pad */
+
+    @media screen and(max-width : 832px){
+        .project-grid{
+            grid-template-columns: 235px 235px;
+        }
+    }
+    /* mobile */
+    @media screen and (max-width : 480px){
+        html{font-size: 60%;}
+        .project-section{
+            font-size: 25px;
+        }
+        .project-grid{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+
